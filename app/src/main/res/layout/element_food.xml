@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout_elementFood"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/element_food_bg"
+    android:layout_margin="@dimen/element_food_linear_margin">
+    <TextView
+        android:id="@+id/textView_food"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/element_foodtype_margintopbottom"
+        android:layout_marginBottom="@dimen/element_foodtype_margintopbottom"
+        android:layout_marginStart="@dimen/element_foodtype_marginstartend"
+        android:layout_marginEnd="@dimen/element_foodtype_marginstartend"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="TARHANA" />
+</LinearLayout>
