@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/button_getMenu"
+        android:icon="@drawable/update_left_rotation_32px"
+        android:title="Menüyü çek"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/checkBox_showOlderPlans"
+        android:checkable="true"
+        android:title="Eski menüleri göster"
+        app:showAsAction="never" />
+
+
+</menu>

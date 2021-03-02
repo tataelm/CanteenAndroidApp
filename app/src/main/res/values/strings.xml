@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Makel Yemekhane</string>
-    <string name="title_dailyMeal">Daily Meal</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dailyMeal">Günün Yemeği</string>
+    <string name="title_mealList">Liste</string>
 </resources>
