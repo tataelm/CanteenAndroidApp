@@ -1,14 +1,11 @@
 package com.makel.ata.yemekhane.fragments;
 
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
+
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -18,7 +15,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.makel.ata.yemekhane.AppConfig;
-import com.makel.ata.yemekhane.MainActivity;
 import com.makel.ata.yemekhane.R;
 import com.makel.ata.yemekhane.adapters.FoodListAdapter;
 
@@ -57,11 +53,7 @@ public class MealListFragment extends Fragment {
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-
-        if (menu != null) {
-            menu.findItem(R.id.button_getMenu).setVisible(false);
-        }
-
+        menu.findItem(R.id.button_getMenu).setVisible(false);
         MenuItem checkBox_showOlderPlans = menu.findItem(R.id.checkBox_showOlderPlans);
         checkBox_showOlderPlans.setChecked(AppConfig.Settings._showOldPlans);
     }

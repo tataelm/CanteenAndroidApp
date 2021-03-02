@@ -2,6 +2,7 @@ package com.makel.ata.yemekhane.adapters;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,13 +12,14 @@ import com.makel.ata.yemekhane.AppConfig;
 import com.makel.ata.yemekhane.R;
 import com.makel.ata.yemekhane.entities.FoodPlan;
 
-import java.text.SimpleDateFormat;
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ViewHolder> {
-    private final SimpleDateFormat _simpleDateFormat = new SimpleDateFormat("dd MMMM yyyy, EEEE");
+
     private final List<FoodPlan> listFoodPlan;
     private final List<FoodPlan> listFoodPlan_noOutdated;
 
@@ -26,6 +28,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ViewHo
         listFoodPlan_noOutdated = TrimOutdatedOptions();
     }
 
+    @NotNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
@@ -38,7 +41,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ViewHo
 
         List<FoodPlan> currentListFoodPlan = AppConfig.Settings._showOldPlans ? listFoodPlan : listFoodPlan_noOutdated;
 
-        holder.item_date.setText(_simpleDateFormat.format(currentListFoodPlan.get(position).get_date().getTime()));
+        holder.item_date.setText(AppConfig._simpleDateFormat.format(currentListFoodPlan.get(position).get_date().getTime()));
 
         if (!currentListFoodPlan.get(position).get_food1().equals("null"))
             holder.item_food1.setText(currentListFoodPlan.get(position).get_food1().trim());
@@ -110,9 +113,10 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ViewHo
             item_food4 = view.findViewById(R.id.item_food4);
             item_food5 = view.findViewById(R.id.item_food5);
 
-            mContentView = (TextView) view.findViewById(R.id.content);
+            mContentView = view.findViewById(R.id.content);
         }
 
+        @NotNull
         @Override
         public String toString() {
             return super.toString() + " '" + mContentView.getText() + "'";

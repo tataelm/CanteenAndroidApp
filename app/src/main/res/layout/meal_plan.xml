@@ -13,7 +13,7 @@
         android:id="@+id/textView_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DATE"
+        android:text="@string/date"
         android:layout_marginBottom="@dimen/activity_horizontal_margin"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -33,11 +33,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/element_foodtype_marginstartend"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="@dimen/element_foodtype_margintopbottom"
             android:layout_marginEnd="@dimen/element_foodtype_marginstartend"
             android:layout_marginBottom="@dimen/element_foodtype_margintopbottom"
-            android:text="Food 1"
+            android:text="@string/food"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
@@ -56,11 +55,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/element_foodtype_marginstartend"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="@dimen/element_foodtype_margintopbottom"
             android:layout_marginEnd="@dimen/element_foodtype_marginstartend"
             android:layout_marginBottom="@dimen/element_foodtype_margintopbottom"
-            android:text="Food 1"
+            android:text="@string/food"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
@@ -79,11 +77,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/element_foodtype_marginstartend"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="@dimen/element_foodtype_margintopbottom"
             android:layout_marginEnd="@dimen/element_foodtype_marginstartend"
             android:layout_marginBottom="@dimen/element_foodtype_margintopbottom"
-            android:text="Food 1"
+            android:text="@string/food"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
@@ -102,11 +99,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/element_foodtype_marginstartend"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="@dimen/element_foodtype_margintopbottom"
             android:layout_marginEnd="@dimen/element_foodtype_marginstartend"
             android:layout_marginBottom="@dimen/element_foodtype_margintopbottom"
-            android:text="Food 1"
+            android:text="@string/food"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
@@ -125,11 +121,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/element_foodtype_marginstartend"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="@dimen/element_foodtype_margintopbottom"
             android:layout_marginEnd="@dimen/element_foodtype_marginstartend"
             android:layout_marginBottom="@dimen/element_foodtype_margintopbottom"
-            android:text="Food 1"
+            android:text="@string/food"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>

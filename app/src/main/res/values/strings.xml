@@ -2,4 +2,11 @@
     <string name="app_name">Makel Yemekhane</string>
     <string name="title_dailyMeal">Günün Yemeği</string>
     <string name="title_mealList">Liste</string>
+
+    <string name="menuyu_cek">Menüyü Çek</string>
+    <string name="eski_menuleri_goster">Eski menüleri göster</string>
+    <string name="ornek_tarih">12.01.2021 Pazartesi</string>
+    <string name="date">Tarih</string>
+    <string name="food">Food</string>
+    <string name="yemek_plani_cekilemedi">Yemek planı çekilemedi</string>
 </resources>

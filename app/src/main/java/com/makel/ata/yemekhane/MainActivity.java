@@ -1,5 +1,6 @@
 package com.makel.ata.yemekhane;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Collections;
 
+@SuppressWarnings("ALL")
 public class MainActivity extends AppCompatActivity {
 
     private static MainActivity instance;
@@ -78,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @SuppressWarnings("deprecation")
+    @SuppressLint("StaticFieldLeak")
     public class ReceiveFoodPlan extends AsyncTask {
         private ProgressDialog progressDialog = null;
         @Override

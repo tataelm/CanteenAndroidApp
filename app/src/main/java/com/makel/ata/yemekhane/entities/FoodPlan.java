@@ -36,6 +36,7 @@ public class FoodPlan implements Comparable<FoodPlan>{
             @SuppressLint("SimpleDateFormat") SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm");
             Calendar calendar = Calendar.getInstance();
             Date date =  dateFormat.parse(strDate);
+            assert date != null;
             calendar.setTime(date);
             _date = calendar;
         } catch (ParseException e) {
@@ -96,9 +97,6 @@ public class FoodPlan implements Comparable<FoodPlan>{
         Calendar calendarCurrentTime = Calendar.getInstance();
         calendarCurrentTime.setTime(currentTime);
 
-        if (get_date().get(Calendar.YEAR) < calendarCurrentTime.get(Calendar.YEAR) || get_date().get(Calendar.DAY_OF_YEAR) < calendarCurrentTime.get(Calendar.DAY_OF_YEAR))
-            return true;
-        else
-            return false;
+        return get_date().get(Calendar.YEAR) < calendarCurrentTime.get(Calendar.YEAR) || get_date().get(Calendar.DAY_OF_YEAR) < calendarCurrentTime.get(Calendar.DAY_OF_YEAR);
     }
 }

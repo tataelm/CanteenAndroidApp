@@ -1,16 +1,20 @@
 package com.makel.ata.yemekhane;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.makel.ata.yemekhane.entities.FoodPlan;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class AppConfig {
+    @SuppressLint("SimpleDateFormat")
+    public static final SimpleDateFormat _simpleDateFormat = new SimpleDateFormat("dd MMMM yyyy, EEEE");
 
-    public static List<FoodPlan> _listFoodPlan = new ArrayList<>();
+    public static final List<FoodPlan> _listFoodPlan = new ArrayList<>();
     public static FoodPlan _foodPlan = null;
     public static final String SHARED_PREFS = "sharedPrefs";
     public static final String BASE_URL = "http://192.168.223.1:8090/foodplan";
